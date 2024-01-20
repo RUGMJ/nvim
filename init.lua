@@ -55,6 +55,9 @@ vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = tr
 
 vim.keymap.set('n', '<leader>e', ":Explore<CR><CR>", { desc = '[E]xplore' })
 
+vim.cmd [[ autocmd RecordingEnter * set cmdheight=1 ]]
+vim.cmd [[ autocmd RecordingLeave * set cmdheight=0 ]]
+
 local highlight_group = vim.api.nvim_create_augroup('YankHighlight', { clear = true })
 vim.api.nvim_create_autocmd('TextYankPost', {
   callback = function()

@@ -22,7 +22,6 @@ require('lazy').setup({
   'Tyilo/logos.vim',
   'tpope/vim-surround',
   'stevearc/dressing.nvim',
-  'tpope/vim-fugitive',
   'tpope/vim-rhubarb',
   'tpope/vim-sleuth',
   'numToStr/Comment.nvim',

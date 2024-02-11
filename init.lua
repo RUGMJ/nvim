@@ -76,7 +76,7 @@ local on_attach = require("on_attach")
 
 local servers = {
   clangd = {
-    filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto", "logos" }
+    filetypes = { "c", "cpp", "objc", "objcpp", "cuda", "proto" }
   },
 
   lua_ls = {
@@ -115,4 +115,8 @@ require 'lspconfig'.gdscript.setup {
   on_attach = on_attach
 }
 
-require 'lspconfig'.sourcekit.setup {}
+require 'lspconfig'.sourcekit.setup {
+  on_attach = on_attach,
+  cmd_env = { SOURCEKIT_TOOLCHAIN_PATH = "/opt/theos/toolchain/linux/host" },
+  cmd = { "/opt/theos/toolchain/linux/host/bin/sourcekit-lsp" }
+}

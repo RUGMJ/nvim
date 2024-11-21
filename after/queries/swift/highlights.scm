@@ -1,3 +1,5 @@
+;extends
+
 ((comment) @orion_directive
 	   (#any-of? @orion_directive
 	    "// orion:disable"
@@ -5,4 +7,4 @@
 	    "// orion:ignore_import"
 	    "// orion:new"))
 
-@orion_directive @keyword
+@orion_directive @function.macro

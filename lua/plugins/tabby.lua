@@ -1,5 +1,5 @@
 return {
-  name = "tabby",
-  dir = "~/tabby/clients/vim",
-  enabled = true
+  'TabbyML/vim-tabby',
+  config = function()
+  end
 }

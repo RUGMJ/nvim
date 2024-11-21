@@ -1,11 +1,20 @@
 return {
   'folke/which-key.nvim',
-  opts = {},
   config = function()
-    require("which-key").register({
-      g = { name = "Git" },
-      f = { name = "Find" },
-      l = { name = "LSP" },
-    }, { prefix = "<leader>" })
+    local wk = require("which-key")
+
+    wk.setup({
+      triggers = {
+        { "<auto>", mode = "nixsotc" },
+        { "s",      mode = { "n", "x" } }
+      }
+    })
+
+    wk.add({
+      { "<leader>f", group = "Find" },
+      { "<leader>g", group = "Git" },
+      { "<leader>l", group = "LSP" },
+      { "s",         group = "Surround" }
+    })
   end
 }

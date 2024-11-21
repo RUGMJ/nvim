@@ -20,11 +20,9 @@ require('lazy').setup({
   'tpope/vim-repeat',
   'dahu/vim-fanfingtastic',
   'Tyilo/logos.vim',
-  'tpope/vim-surround',
   'stevearc/dressing.nvim',
   'tpope/vim-rhubarb',
   'tpope/vim-sleuth',
-  'numToStr/Comment.nvim',
 
   { import = 'plugins' },
 }, {})
@@ -46,13 +44,15 @@ vim.o.completeopt = 'menuone,noselect'
 vim.o.termguicolors = true
 vim.o.relativenumber = true
 vim.o.cmdheight = 0
+vim.o.tabstop = 4
+vim.o.shiftwidth = 4
 
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 
 vim.keymap.set('n', 'k', "v:count == 0 ? 'gk' : 'k'", { expr = true, silent = true })
 vim.keymap.set('n', 'j', "v:count == 0 ? 'gj' : 'j'", { expr = true, silent = true })
 
-vim.keymap.set('n', '<leader>e', ":Explore<CR><CR>", { desc = '[E]xplore' })
+vim.keymap.set('n', '-', ":Oil<CR><CR>", { desc = 'Oil' })
 
 vim.cmd [[ autocmd RecordingEnter * set cmdheight=1 ]]
 vim.cmd [[ autocmd RecordingLeave * set cmdheight=0 ]]
@@ -119,4 +119,9 @@ require 'lspconfig'.sourcekit.setup {
   on_attach = on_attach,
   cmd_env = { SOURCEKIT_TOOLCHAIN_PATH = "/opt/theos/toolchain/linux/host" },
   cmd = { "/opt/theos/toolchain/linux/host/bin/sourcekit-lsp" }
+}
+
+require 'lspconfig'.nushell.setup {
+  on_attach = on_attach,
+  cmd = { "/usr/bin/nu", "--lsp" }
 }

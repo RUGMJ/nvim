@@ -117,8 +117,8 @@ require 'lspconfig'.gdscript.setup {
 
 require 'lspconfig'.sourcekit.setup {
   on_attach = on_attach,
-  cmd_env = { SOURCEKIT_TOOLCHAIN_PATH = "/opt/theos/toolchain/linux/host" },
-  cmd = { "/opt/theos/toolchain/linux/host/bin/sourcekit-lsp" }
+  cmd_env = { SOURCEKIT_TOOLCHAIN_PATH = vim.fn.expand("$THEOS/toolchain/linux/host") },
+  cmd = { vim.fn.expand("$THEOS/toolchain/linux/host/bin/sourcekit-lsp") }
 }
 
 require 'lspconfig'.nushell.setup {

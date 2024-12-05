@@ -27,7 +27,7 @@
 - [ mason.nvim ]( https://github.com/williamboman/mason.nvim ) - Installs LSPs for you
 - [ mini.icons ]( https://github.com/echasnovski/mini.icons ) - Fancy icons
 - [ mini.pairs ]( https://github.com/echasnovski/mini.pairs ) - Automatically inserts the closing bracket / quote
-- [ mini.surround ]( https://github.com/mini.surround ) - Makes working with character pairs easy
+- [ mini.surround ]( https://github.com/echasnovski/mini.surround ) - Makes working with character pairs easy
 - [ neocord ]( https://github.com/IogaMaster/neocord ) - Discord presence
 - [ neodev.nvim ]( https://github.com/folke/neodev.nvim ) - Neovim-related autocomplete in lua files
 - [ nvim-cmp ]( https://github.com/hrsh7th/nvim-cmp ) - Autocompletion engine

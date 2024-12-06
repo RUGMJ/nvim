@@ -14,4 +14,7 @@ return {
     skip_confirm_for_simple_edits = false,
   },
   dependencies = { { "echasnovski/mini.icons", opts = {} } },
+  init = function()
+    vim.keymap.set('n', '-', ":Oil<CR><CR>", { desc = 'Oil' })
+  end
 }

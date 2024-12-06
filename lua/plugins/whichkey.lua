@@ -1,6 +1,8 @@
 return {
   'folke/which-key.nvim',
   config = function()
+    vim.keymap.set({ 'n', 'v' }, '<leader>', '<Nop>', { silent = true })
+
     local wk = require("which-key")
 
     wk.setup({

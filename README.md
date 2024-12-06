@@ -1,6 +1,16 @@
 # My neovim config
 
-## Screenshots
+![](content/code.png) 
+
+## The Goals
+
+- Efficiency, the main goal for my editor is being able to do anything I want in the shortest amount of keystrokes
+- Looks, I want my editor to look amazing while I use it
+- Modular, I want to be able to configure my editor without having to re-learn where everything is
+- Update-safe, I dont want my editor breaking just because some random plugin decided to change a minor thing [xkcd.com/2347](https://xkcd.com/2347/)
+
+<details>
+<summary>More Screenshots</summary>
 
 ![](content/dashboard.png) 
 ![](content/code.png) 
@@ -8,7 +18,11 @@
 ![](content/telescope.png) 
 ![](content/markdown.png) 
 
-## Plugins
+</details>
+
+<details>
+
+<summary>Plugins</summary>
 
 - [ catppuccin ]( https://github.com/catppuccin/nvim ) - Colour Theme
 - [ cmp-nvim-lsp ]( https://github.com/hrsh7th/cmp-nvim-lsp ) - Autocomplete lsp entries
@@ -59,3 +73,9 @@
 - [ wildfire.nvim ]( https://github.com/sustech-data/wildfire.nvim ) - Better treesitter incremental selection
 - [ nvim-colorizer.lua ]( https://github.com/norcalli/nvim-colorizer.lua ) - Shows colours in css files
 - [ rust-tools.nvim ]( https://github.com/simrat39/rust-tools.nvim ) - Better rust tooling
+
+</details>
+
+----------
+
+If you like my neovim config you might like [my other dotfiles](https://github.com/rugmj/.dotfiles) :)

@@ -1,6 +1,7 @@
 return {
   "folke/snacks.nvim",
   opts = {
+    toggle = {},
     dashboard = {
       preset = {
         keys = {

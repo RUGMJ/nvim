@@ -6,7 +6,15 @@ return {
 
     { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
 
-    'folke/neodev.nvim',
+    {
+      "folke/lazydev.nvim",
+      ft = "lua",
+      opts = {
+        library = {
+          { path = "${3rd}/luv/library", words = { "vim%.uv" } },
+        },
+      },
+    },
   },
   config = function()
     local on_attach = require("on_attach")
@@ -23,8 +31,6 @@ return {
         },
       },
     }
-
-    require('neodev').setup()
 
     local capabilities = vim.lsp.protocol.make_client_capabilities()
     capabilities = require('cmp_nvim_lsp').default_capabilities(capabilities)

@@ -43,7 +43,7 @@
 - [mini.pairs](https://github.com/echasnovski/mini.pairs) - Automatically inserts the closing bracket / quote
 - [mini.surround](https://github.com/echasnovski/mini.surround) - Makes working with character pairs easy
 - [neocord](https://github.com/IogaMaster/neocord) - Discord presence
-- [neodev.nvim](https://github.com/folke/neodev.nvim) - Neovim-related autocomplete in lua files
+- [lazydev.nvim](https://github.com/folke/lazydev.nvim) - Neovim-related autocomplete in lua files
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp) - Autocompletion engine
 - [nvim-dap](https://github.com/mfussenegger/nvim-dap) - Debugger engine
 - [nvim-dap-go](https://github.com/leoluz/nvim-dap-go) - Go Debugger
@@ -56,7 +56,7 @@
 - [oil.nvim](https://github.com/stevearc/oil.nvim) - File browser / manager
 - [plenary.nvim](https://github.com/nvim-lua/plenary.nvim) - Random util functions
 - [qmk.nvim](https://github.com/codethread/qmk.nvim) - Automatically formats qmk keyboard layout
-- [snacks.nvim](https://github.com/folke/snacks.nvim) - Dashboard, (offers other things which i'm not using too)
+- [snacks.nvim](https://github.com/folke/snacks.nvim) - Dashboard, Toggle keybinds (offers other things which i'm not using too)
 - [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Uses `fzf` for telescope
 - [telescope-live-grep-args.nvim](https://github.com/nvim-telescope/telescope-live-grep-args.nvim) - Allows more control over telescope grep
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Search + Picker
@@ -72,6 +72,7 @@
 - [which-key.nvim](https://github.com/folke/which-key.nvim) - Shows available keybinds, can be helpful for learning new binds
 - [wildfire.nvim](https://github.com/sustech-data/wildfire.nvim) - Better treesitter incremental selection
 - [nvim-colorizer.lua](https://github.com/norcalli/nvim-colorizer.lua) - Shows colours in css files
+- [render-markdown.nvim](https://github.com/MeanderingProgrammer/render-markdown.nvim) - Renders markdown files while editing
 - [rust-tools.nvim](https://github.com/simrat39/rust-tools.nvim) - Better rust tooling
 
 </details>

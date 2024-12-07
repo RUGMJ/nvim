@@ -16,10 +16,19 @@ function M.setup()
   vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("lsp-attach-format", { clear = true }),
     callback = function(args)
+      local client = vim.lsp.get_client_by_id(args.data.client_id)
+
+      if client == nil then
+        return
+      end
+
       vim.api.nvim_create_autocmd("BufWritePre", {
         buffer = args.buf,
         callback = function()
           if not format_on_save_enabled then
+            return
+          end
+          if not client.supports_method("textDocument/formatting") then
             return
           end
 

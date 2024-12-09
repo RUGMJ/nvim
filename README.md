@@ -60,6 +60,7 @@
 - [telescope-fzf-native.nvim](https://github.com/nvim-telescope/telescope-fzf-native.nvim) - Uses `fzf` for telescope
 - [telescope-live-grep-args.nvim](https://github.com/nvim-telescope/telescope-live-grep-args.nvim) - Allows more control over telescope grep
 - [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) - Search + Picker
+- [treejs](https://github.com/Wansmer/treesj) - Allows code joining / splitting
 - [tree-sitter-nu](https://github.com/nushell/tree-sitter-nu) - Treesitter parser for nu
 - [vim-be-good](https://github.com/ThePrimeagen/vim-be-good) - Games to make you better at vim
 - [vim-fanfingtastic](https://github.com/dahu/vim-fanfingtastic) - Makes the default Ff and Tt motions better

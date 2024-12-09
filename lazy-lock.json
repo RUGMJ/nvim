@@ -38,6 +38,7 @@
   "telescope-live-grep-args.nvim": { "branch": "master", "commit": "8ad632f793fd437865f99af5684f78300dac93fb" },
   "telescope.nvim": { "branch": "0.1.x", "commit": "a0bbec21143c7bc5f8bb02e0005fa0b982edc026" },
   "tree-sitter-nu": { "branch": "main", "commit": "a94fdf1df5deba1aa1a3fff23e1276333b5ab666" },
+  "treesj": { "branch": "main", "commit": "03415ac60791d48e120a80d37e080744faf3ac15" },
   "vim-be-good": { "branch": "master", "commit": "0ae3de14eb8efc6effe7704b5e46495e91931cc5" },
   "vim-fanfingtastic": { "branch": "master", "commit": "6d0fea6dafbf3383dbab1463dbfb3b3d1b94b209" },
   "vim-fugitive": { "branch": "master", "commit": "320b18fba2a4f2fe3c8225c778c687e0d2620384" },

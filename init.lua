@@ -61,6 +61,9 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 })
 
 require("format_on_save").setup()
+require("note_sync").setup({
+  notes_dir = "~/notes"
+})
 
 vim.keymap.set('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' })
 vim.keymap.set('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' })

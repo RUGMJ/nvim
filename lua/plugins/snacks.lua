@@ -32,7 +32,7 @@ return {
         },
 
         function()
-          local in_git = Snacks.git.get_root() ~= nil
+          local in_git = require 'snacks'.git.get_root() ~= nil
           local cmds = {
             {
               icon = " ",

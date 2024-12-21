@@ -73,5 +73,14 @@ return {
         },
       },
     })
+
+    local parser_config = require "nvim-treesitter.parsers".get_parser_configs()
+    -- parser_config.logos = {
+    --   install_info = {
+    --     url = "~/Development/tree-sitter-logos",
+    --     files = { "src/parser.c" },
+    --   },
+    --   filetype = "x",
+    -- }
   end
 }

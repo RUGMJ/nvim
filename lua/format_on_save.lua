@@ -11,7 +11,7 @@ function M.setup()
     set = function(state)
       format_on_save_enabled = state
     end
-  }):map("<leader>lF")
+  }):map("<leader>lF"):map("<leader>tlF")
 
   vim.api.nvim_create_autocmd("LspAttach", {
     group = vim.api.nvim_create_augroup("lsp-attach-format", { clear = true }),

@@ -13,10 +13,14 @@ return {
     })
 
     wk.add({
-      { "<leader>f", group = "Find" },
-      { "<leader>g", group = "Git" },
-      { "<leader>l", group = "LSP" },
-      { "s",         group = "Surround" }
+      { "<leader>f",  group = "Find" },
+      { "<leader>g",  group = "Git" },
+      { "<leader>gh", group = "Hunk" },
+      { "<leader>l",  group = "LSP" },
+      { "<leader>t",  group = "Toggle" },
+      { "<leader>tg", group = "Git" },
+      { "<leader>tl", group = "LSP" },
+      { "s",          group = "Surround" }
     })
   end
 }

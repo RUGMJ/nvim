@@ -28,7 +28,7 @@ end
 ---@param opts opts
 function M.setup(opts)
   vim.api.nvim_create_autocmd("BufEnter", {
-    pattern = vim.split(vim.fn.expand(opts.notes_dir .. "/**.md"), "\n"),
+    pattern = vim.split(vim.fn.expand(opts.notes_dir .. "/**/*.md"), "\n"),
     callback = function()
       run_in_cwd("git", { "pull" }, true)
       vim.cmd [[silent! edit]]
@@ -36,7 +36,7 @@ function M.setup(opts)
   })
 
   vim.api.nvim_create_autocmd("BufWritePost", {
-    pattern = vim.split(vim.fn.expand(opts.notes_dir .. "/**.md"), "\n"),
+    pattern = vim.split(vim.fn.expand(opts.notes_dir .. "/**/*.md"), "\n"),
     callback = function(args)
       run_in_cwd("git", { "commit", "--all", "-m", "(Automatic) Updated " .. args.file }, true)
       run_in_cwd("git", { "push" })

@@ -3,6 +3,7 @@ return {
   branch = '0.1.x',
   dependencies = {
     'nvim-lua/plenary.nvim',
+    "debugloop/telescope-undo.nvim",
     {
       'nvim-telescope/telescope-fzf-native.nvim',
       build = 'make',
@@ -29,6 +30,7 @@ return {
 
     require("telescope").load_extension("fzf")
     require("telescope").load_extension("live_grep_args")
+    require("telescope").load_extension("undo")
 
     vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles, { desc = '[?] Find recently opened files' })
     vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers, { desc = '[ ] Find existing buffers' })
@@ -54,5 +56,6 @@ return {
       { desc = '[F]ind by [G]rep' })
     vim.keymap.set('n', '<leader>fd', require('telescope.builtin').diagnostics, { desc = '[F]ind [D]iagnostics' })
     vim.keymap.set('n', '<leader>fr', require('telescope.builtin').resume, { desc = '[F]ind [R]resume' })
+    vim.keymap.set('n', '<leader>fu', require('telescope').extensions.undo.undo, { desc = '[F]ind [U]ndo tree' })
   end
 }

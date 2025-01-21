@@ -28,7 +28,7 @@ function M.setup()
           if not format_on_save_enabled then
             return
           end
-          if not client.supports_method("textDocument/formatting") then
+          if not client:supports_method("textDocument/formatting") then
             return
           end
 

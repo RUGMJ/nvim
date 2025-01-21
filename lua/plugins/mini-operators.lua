@@ -27,7 +27,7 @@ return {
     },
 
     sort = {
-      prefix = 'gs',
+      prefix = '',
 
       func = nil,
     }

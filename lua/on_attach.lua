@@ -9,7 +9,7 @@ local on_attach = function(_, bufnr)
 
   nmap('<leader>lr', vim.lsp.buf.rename, '[R]ename')
   nmap('<leader>la', vim.lsp.buf.code_action, 'Code [A]ction')
-  nmap('<leader>d', vim.lsp.buf.definition, 'Goto [D]efinition')
+  nmap('<leader>ld', vim.lsp.buf.definition, 'Goto [D]efinition')
   nmap('<leader>lR', require('telescope.builtin').lsp_references, 'Goto [R]eferences')
   nmap('<leader>I', require('telescope.builtin').lsp_implementations, 'Goto [I]mplementation')
   nmap('<leader>lD', vim.lsp.buf.type_definition, 'Type [D]efinition')

@@ -4,7 +4,16 @@ return {
     { 'williamboman/mason.nvim', config = true },
     'williamboman/mason-lspconfig.nvim',
 
-    { 'j-hui/fidget.nvim',       tag = 'legacy', opts = {} },
+    {
+      'j-hui/fidget.nvim',
+      opts = {
+        notification = {
+          window = {
+            winblend = 0, -- makes catppuccin happy
+          },
+        }
+      }
+    },
 
     {
       "folke/lazydev.nvim",

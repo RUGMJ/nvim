@@ -20,6 +20,7 @@ return {
       { "<leader>t",  group = "Toggle" },
       { "<leader>tg", group = "Git" },
       { "<leader>tl", group = "LSP" },
+      { "<leader>tu", group = "Ui" },
       { "s",          group = "Surround" }
     })
   end

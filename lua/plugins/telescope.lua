@@ -57,5 +57,6 @@ return {
     vim.keymap.set('n', '<leader>fd', require('telescope.builtin').diagnostics, { desc = '[F]ind [D]iagnostics' })
     vim.keymap.set('n', '<leader>fr', require('telescope.builtin').resume, { desc = '[F]ind [R]resume' })
     vim.keymap.set('n', '<leader>fu', require('telescope').extensions.undo.undo, { desc = '[F]ind [U]ndo tree' })
+    vim.keymap.set('n', '<leader>fm', require('telescope.builtin').keymaps, { desc = '[F]ind [M]aps' })
   end
 }

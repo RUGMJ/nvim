@@ -32,13 +32,14 @@ return {
         },
 
         function()
-          local in_git = require 'snacks'.git.get_root() ~= nil
+          local in_github_repo = require "snacks".git.get_root() ~= nil and
+              vim.fn.system("git remote -v | grep -q 'github.com'") == 0
           local cmds = {
             {
               icon = " ",
               title = "Projects",
               section = "projects",
-              enabled = not in_git
+              enabled = not in_github_repo
             },
             {
               title = "Open Issues",
@@ -65,7 +66,7 @@ return {
             return vim.tbl_extend("force", {
               pane = 2,
               section = "terminal",
-              enabled = in_git,
+              enabled = in_github_repo,
               padding = 1,
               ttl = 5 * 60,
               indent = 3,

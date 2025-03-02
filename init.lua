@@ -24,6 +24,8 @@ vim.o.foldlevelstart = 99
 
 vim.o.shell = "bash" -- Seems some plugins dont like nushell..
 
+vim.o.exrc = true
+
 local lazypath = vim.fn.stdpath 'data' .. '/lazy/lazy.nvim'
 if not vim.uv.fs_stat(lazypath) then
   vim.fn.system {

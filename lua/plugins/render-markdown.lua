@@ -7,6 +7,16 @@ return {
         code = {
             disable_background = true,
             border = 'none'
+        },
+
+        checkbox = {
+            custom = {
+                { raw = "[ ]", rendered = "󰄱", highlight = "RenderMarkdownUnchecked" },
+                { raw = "[x]", rendered = "", highlight = "RenderMarkdownChecked" },
+                { raw = "[>]", rendered = "", highlight = "RenderMarkdownRightArrow" },
+                { raw = "[~]", rendered = "󰰱", highlight = "RenderMarkdownTodo" },
+                { raw = "[!]", rendered = "", highlight = "RenderMarkdownImportant" },
+            }
         }
     },
 }
